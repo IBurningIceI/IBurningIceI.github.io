@@ -107,12 +107,18 @@ Assignment 2 - Part 1 html file
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-
+      <img src="firefox-logo-only-RGB-120.png">
     </header>
-
+    <iframe width="400" height="255" src="https://www.youtube.com/embed/ojcNcvb1olg?si=728NKp9iQxe-aLTI"
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <main>
       <article>
         <!-- insert iframe from youtube -->
+       <!-- <video controls
+          width="400">
+          <source src="https://youtu.be/ojcNcvb1olg?si=fvzYHBVkn8_XbDbT" type="video/webm"/>
+      </video> -->
 
         <h2>Rocking the free web</h2>
 
@@ -124,22 +130,36 @@ Assignment 2 - Part 1 html file
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img srcset="firefox-logo-only-RGB-120.png 120w,
+                      firefox-logo-only-RGB-400.png 400w"
+               sizes="(max-width: 500px) 120px,
+                      400px"
+               src="firefox-logo-only-RGB-400.png" alt="Download Firefox">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img srcset="mozilla-dinosaur-head_120.png 120w,
+                       mozilla-dinosaur-head_400.png 400w"
+               sizes="(max-width: 500px) 120px, 400px"
+               src="mozilla-dinosaur-head_400.png" alt="Mozilla Website">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img srcset="firefox-addons_120.png 120w,
+                       firefox-addons_400.png 400w"
+                sizes="(max-width: 500px) 120px, 400px"
+                src="firefox-addons_400.png" alt="Firefox extensions"      >
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img src="mdn.svg" role="img" alt="Mozilla developer portal.">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <img srcset="red-panda_600.png 600w,
+                     red-panda_1200.png 1200w"
+             sizes="(max-width: 600px) 600w, 1200w"
+             src="red-panda_1200.png">
       </div>
 
     </main>
