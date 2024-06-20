@@ -2,4 +2,19 @@ html {
   font-family: sans-serif;
 }
 
+div {
+  background: red;
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  border: 1px solid darkred;
+  border-radius:15px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 8;
+  font-size: 1.1rem; /* base pixel size is 16 1.1 * 16 is 17.6 */
+  color: white;
+  text-shadow: black;
+}
+
 /* Your CSS below here */
