@@ -81,6 +81,10 @@ footer {
   font-size: 2rem;
 }
 
+a {
+  outline: none;
+}
+
 a:visited {
   color: darkgoldenrod;
 }
@@ -93,6 +97,24 @@ a:focus{
   color: rgb(255, 238, 6)
 }
 
+a:active {
+  color: red;
+}
+
+a[href*="http"] {
+  display: inline-block;
+  background-size: 5px 5px;
+  background: url("external-link-52.png") no-repeat;
+}
+
 a:hover{
   color: rgb(106, 103, 59)
+}
+
+li {
+  line-height: 1.5;
+}
+
+nav {
+  padding-left: 0;
 }
