@@ -5,8 +5,6 @@ Filename: index.html
 Date: June/19th/2024
 Assignment 3 - Part 3 html file
 
-
-
 */
 
 * {
@@ -52,3 +50,49 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+html {
+  font-size: 10px;
+}
+
+header {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+section {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  text-indent: 20px;
+}
+
+aside {
+  font-size: 1.5rem;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
+footer {
+  font-size: 2rem;
+}
+
+a:visited {
+  color: darkgoldenrod;
+}
+
+a:link{
+  color: rgb(189, 183, 107);
+}
+
+a:focus{
+  color: rgb(255, 238, 6)
+}
+
+a:hover{
+  color: rgb(106, 103, 59)
+}
