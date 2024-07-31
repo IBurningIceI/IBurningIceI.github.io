@@ -1,3 +1,10 @@
+/*
+Name: William Dawson
+Filename: main.js
+Date: July/30th/2024
+Assignment 4 - Part 1
+ */
+
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
@@ -22,16 +29,27 @@ randomize.addEventListener('click', result);
 
 function result() {
 
-    if(customName.value !== '') {
+    let newStory = storyText;
+
+    let xItem = randomValueFromArray(insertX);
+    let yItem = randomValueFromArray(insertY);
+    let zItem = randomValueFromArray(insertZ);
+
+    newStory =  newStory.replaceAll(":insertx:", xItem);
+    newStory = newStory.replace(":inserty:", yItem);
+    newStory = newStory.replace(":insertz:", zItem)
+
+    if (customName.value !== '') {
         const name = customName.value;
+        newStory = newStory.replace("Bob", name)
+    }
+
+    if (document.getElementById("uk").checked) {
+        const weight = Math.round(300 / 14);
+        const temperature = Math.round(94);
 
     }
 
-    if(document.getElementById("uk").checked) {
-        const weight = Math.round(300);
-        const temperature =  Math.round(94);
-
-    }
-
-    story.textContent = ;
+    story.textContent =;
     story.style.visibility = 'visible';
+}
