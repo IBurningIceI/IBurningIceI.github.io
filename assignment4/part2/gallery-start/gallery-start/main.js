@@ -1,3 +1,9 @@
+/*
+Name: William Dawson
+Filename: main.js
+Date: July/31st/2024
+Assignment 4 - Part 2
+ */
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 

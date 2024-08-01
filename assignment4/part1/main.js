@@ -35,6 +35,7 @@ function result() {
     let yItem = randomValueFromArray(insertY);
     let zItem = randomValueFromArray(insertZ);
 
+    // Using replace and replace all to add the inserted text into the generated text
     newStory =  newStory.replaceAll(":insertx:", xItem);
     newStory = newStory.replace(":inserty:", yItem);
     newStory = newStory.replace(":insertz:", zItem);
