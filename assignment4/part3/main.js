@@ -1,3 +1,10 @@
+/*
+Name: William Dawson
+Filename: main.js
+Date: August/1st/2024
+Assignment 4 - Part 3
+ */
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
