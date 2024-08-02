@@ -6,6 +6,8 @@ Assignment 4 - Part 4
  */
 
 // setup canvas
+let counter = 0
+const paragraph = document.querySelector("p")
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
@@ -144,6 +146,8 @@ class EvilCircle extends Shape{
 
         if (distance < this.size + ball.size) {
           ball.exists = false;
+          counter = counter -  1;
+          paragraph.textContent = "Ball count: " + counter;
         }
       }
     }
@@ -168,6 +172,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  counter = counter + 1;
+  paragraph.textContent = "Ball count: " + counter;
 }
 
 function loop() {
